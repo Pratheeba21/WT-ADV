@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Indulgence - Chocolates, Cakes, Cookies & Ice Cream</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: #f08080;
+        text-shadow: 2px 2px 5px #ccc;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #808080;
+      }
+
+      .product-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .product-container img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin: 5px;
+      }
+
+      .product-container h3 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        color: #f08080;
+        text-decoration: underline;
+        text-shadow: 1px 1px 2px #ccc;
+      }
+
+      .product-container p {
+        margin-bottom: 15px;
+        color: #808080;
+        font-style: italic;
+      }
+
+      .product-container a {
+        background-color: #f08080;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: 0.3s ease-in-out all;
+      }
+
+      .product-container a:hover {
+        background-color: #d9534f;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #808080;
+      }
+
+      .marquee {
+        font-size: 1.5rem;
+        color: #f08080;
+        text-shadow: 2px 2px 5px #ccc;
+        animation: marquee 8s linear infinite;
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="marquee">
+        Sweet Indulgence - Chocolates, Cakes, Cookies & Ice Cream
+      </h1>
+      <p>Treat yourself to a world of deliciousness!</p>
+    </header>
+
+    <main>
+      <section class="product-container">
+        <h3>Indulge in Decadent Chocolates</h3>
+        <div>
+          <img src="images/chocolates1.jpg" alt="Delicious Chocolates" />
+          <img src="images/chocolates2.jpg" alt="Luxury Chocolates" />
+          <img src="images/chocolates3.jpg" alt="Truffles" />
+          <img src="images/chocolates4.jpg" alt="Chocolate Bars" />
+        </div>
+        <p>
+          From creamy truffles to rich bars, explore our exquisite chocolate
+          collection.
+        </p>
+        <div>
+          <a href="#">Shop Now</a>
+          <a href="#">More Info</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

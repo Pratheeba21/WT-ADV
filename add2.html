@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Indulgence - Chocolates, Cakes & Cookies</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-image: url("advbg.jpg");
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #ff6347; /* Tomato */
+        animation: color-change 5s infinite;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #4b0082; /* Indigo */
+        animation: color-change 5s infinite;
+      }
+
+      @keyframes color-change {
+        0% {
+          color: #077771d8;
+        } /* Indigo */
+        50% {
+          color: #eb5713;
+        } /* Magenta */
+        100% {
+          color: #0d1b96d5;
+        } /* Indigo */
+      }
+
+      .product-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .product-card:nth-child(1) {
+        background-color: #f08cc3d7; /* Background color for odd product rows (ice cream) */
+      }
+
+      .product-card:nth-child(2) {
+        background-color: #f3a617c4; /* Background color for cake rows */
+      }
+
+      .product-card:nth-child(3) {
+        background-color: #2bf710b9; /* Background color for chocolate rows */
+      }
+
+      .product-card:nth-child(4) {
+        background-color: #e6334298; /* Background color for cookie rows */
+      }
+
+      .product-images {
+        display: flex;
+      }
+
+      .product-images img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-right: 60px;
+        border: 2px solid #ff69b4; /* Hot Pink */
+        border-radius: 5px;
+      }
+
+      .product-info {
+        text-align: center;
+      }
+
+      .product-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        color: #58040b; /* Steel Blue */
+      }
+
+      .product-info p {
+        margin-bottom: 10px;
+      }
+
+      .price {
+        font-weight: bold;
+        color: #8b008b; /* Dark Magenta */
+      }
+
+      .shop-now {
+        background-color: #5c053f; /* Gold */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .shop-now:hover {
+        background-color: #25ad09; /* Dark Orange */
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        background-color: #212027cc; /* Moccasin */
+        padding: 10px;
+        color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sweet Indulgence</h1>
+      <p>Treat yourself to a world of deliciousness!</p>
+    </header>
+
+    <main>
+      <section class="product-card">
+        <div class="product-images">
+          <img src="choc1.jpg" alt="Delicious Chocolates" />
+          <img src="choc2.jpg" alt="Delicious Chocolates" />
+          <img src="choc3.jpg" alt="Delicious Chocolates" />
+          <img src="choc4.jpg" alt="Delicious Chocolates" />
+        </div>
+        <div class="product-info">
+          <h3>Indulge in Decadent Chocolates</h3>
+          <p>
+            Rich, creamy, and made with the finest ingredients. Discover a
+            variety of flavors to tantalize your taste buds.
+          </p>
+          <p class="price">$9.99</p>
+          <a href="#" class="shop-now">Shop Now</a>
+        </div>
+      </section>
+
+      <section class="product-card">
+        <div class="product-images">
+          <img src="cake1.jpg" alt="Luscious Cakes" />
+          <img src="cake2.jpg" alt="Luscious Cakes" />
+          <img src="cake3.jpg" alt="Luscious Cakes" />
+          <img src="cake4.jpg" alt="Luscious Cakes" />
+        </div>
+        <div class="product-info">
+          <h3>Celebrate with Flavorful Cakes</h3>
+          <p>
+            Perfect for any occasion, our cakes are handcrafted with love and
+            fresh ingredients. Choose from classic flavors or adventurous
+            options.
+          </p>
+          <p class="price">$19.99</p>
+          <a href="#" class="shop-now">Shop Now</a>
+        </div>
+      </section>
+
+      <section class="product-card">
+        <div class="product-images">
+          <img src="coo1.jpg" alt="Warm & Satisfying Cookies" />
+          <img src="coo2.jpg" alt="Warm & Satisfying Cookies" />
+          <img src="coo3.jpg" alt="Warm & Satisfying Cookies" />
+          <img src="coo4.jpg" alt="Warm & Satisfying Cookies" />
+        </div>
+        <div class="product-info">
+          <h3>Warm Your Heart with Homemade Cookies</h3>
+          <p>
+            Crisp, chewy, and bursting with flavor. Choose from classic
+            favorites or explore unique combinations.
+          </p>
+          <p class="price">$5.99</p>
+          <a href="#" class="shop-now">Shop Now</a>
+        </div>
+      </section>
+
+      <section class="product-card">
+        <div class="product-images">
+          <img src="ice1.jpg" alt="Creamy Ice Cream" />
+          <img src="ice2.jpg" alt="Creamy Ice Cream" />
+          <img src="ice3.jpg" alt="Creamy Ice Cream" />
+          <img src="ice4.jpg" alt="Creamy Ice Cream" />
+        </div>
+        <div class="product-info">
+          <h3>Cool Down with Delicious Ice Cream</h3>
+          <p>
+            Creamy and refreshing, our ice cream is made with the finest
+            ingredients. Explore a variety of flavors to satisfy your cravings.
+          </p>
+          <p class="price">$3.99</p>
+          <a href="#" class="shop-now">Shop Now</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Sweet Indulgence by Pratheeba</p>
+      <p>Shop @ Pratheeba desserts!!!</p>
+    </footer>
+  </body>
+</html>
